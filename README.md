@@ -1,11 +1,16 @@
-# desafio-03
+# Desafio-03 :wave:
 
 ## Fazer um botão com efeito rolagem na bordar
 
 ## USEI ##
 
-> Hover
-> Transition
-> Tranform com skew()
+* Hover
 
+* Transition
 
+* Tranform
+    * skew()
+
+* pseudos-elements
+    * after
+    * before
