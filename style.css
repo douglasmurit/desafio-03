@@ -1,0 +1,75 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+
+    width: 400px;
+    height: 400px;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+
+.botao{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+
+    border: 4px solid purple;
+    text-align: center;
+    justify-content: center;
+}
+
+.botao p{
+    color: purple;
+}
+
+.botao::before{
+    content:'';
+    background: #fff;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 18vh;
+    left: 30%;
+    transform: skew(30deg);
+    
+
+    transition: .5s linear;
+}
+
+
+.botao::after{
+    content:'';
+    background: #fff;
+    height: 18px;
+    width: 15px;
+    position: absolute;
+    bottom: 40%;
+    right: 30%;
+    transform: skew(30deg);
+    transition: .5s linear;
+}
+
+.botao:hover::before{
+    left: 68%;
+}
+
+.botao:hover::after{
+    right: 68%;
+}
